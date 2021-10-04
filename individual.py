@@ -12,6 +12,7 @@
 """
 import sys
 
+
 def get_shop():
     """
     Данная функция добавляет пары
@@ -26,6 +27,8 @@ def get_shop():
         'product': product,
         'price': price,
     }
+
+
 def display_shops(shops):
     """
     Отображает данные о товаре в виде таблицы и
@@ -59,6 +62,8 @@ def display_shops(shops):
             )
         )
         print(line)
+     
+    
 def select_shops(shops):
     """
     По заданому магазину находит товары, находящиеся в нем,
@@ -107,5 +112,6 @@ def main():
         else:
             print(f"Неизвестная команда {command}", file=sys.stderr)
 
+            
 if __name__ == '__main__':
     main()
